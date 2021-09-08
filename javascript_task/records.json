@@ -1,0 +1,14 @@
+{
+	"userID": [1, 2, 1, 1, 1, 2, 3],
+	"device": [
+		"Windows 10",
+		"'OSX 15.4",
+		"iPhone 8s",
+		"Windows 10",
+		"iPhone 8s",
+		"OSX 15.4",
+		"Android 9.1"
+	],
+	"action": ["start", "start", "start", "stop", "stop", "stop", "start"],
+	"dateActioned": [100, 200, 250, 370, 410, 490, 700]
+}

@@ -1,0 +1,8 @@
+.vscode
+javascript_task/node_modules/
+python_task/venv/
+python_task/__pycache__/
+python_task/report.html/
+python_task/.pytest_cache/
+python_task/tests/__pycache__/
+python_task/assets
