@@ -12,7 +12,7 @@ function getAllIndexes(arr, val) {
 }
 
 // Function that returns all user ids with specific action whithin given timeframe
-function getUsers(records, action, startTime, endTime) {
+const getUsers = function getUsers(records, action, startTime, endTime) {
 	var actIndex = getAllIndexes(records.action, action);
 	let dateIndex = [];
 	let userIds = [];
@@ -27,16 +27,21 @@ function getUsers(records, action, startTime, endTime) {
 		userIds.push(records.userID[element]);
 	});
 	return userIds;
-}
+};
 
 // Function that returns unique playback time in seconds
-function getPlaybackTime(userID, records) {
+const getPlaybackTime = function (userID, records) {
 	let startPlayback = records.userID.indexOf(userID);
 	let endPlayback = records.userID.lastIndexOf(userID);
 	let uniquePlayback =
 		records.dateActioned[endPlayback] - records.dateActioned[startPlayback];
 	return uniquePlayback;
-}
+};
 
+// Printing funtions result
 console.log(getUsers(records, 'start', 700, 900));
 console.log(getPlaybackTime(1, records));
+
+// Export functions for unit testing
+exports.getPlaybackTime = getPlaybackTime;
+exports.getUsers = getUsers;

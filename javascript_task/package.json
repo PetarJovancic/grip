@@ -1,22 +1,28 @@
 {
-  "name": "javascript",
-  "version": "1.0.0",
-  "description": "Javascript tasks",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PetarJovancic/grip.git"
-  },
-  "author": "Petar Jovancic",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PetarJovancic/grip/issues"
-  },
-  "homepage": "https://github.com/PetarJovancic/grip#readme",
-  "devDependencies": {
-    "jest": "^27.1.1"
-  }
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "Javascript tasks",
+	"main": "app.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.[t|j]sx?$": "babel-jest"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PetarJovancic/grip.git"
+	},
+	"author": "Petar Jovancic",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/PetarJovancic/grip/issues"
+	},
+	"homepage": "https://github.com/PetarJovancic/grip#readme",
+	"devDependencies": {
+		"babel-jest": "^27.1.1",
+		"jest": "^27.1.1"
+	}
 }

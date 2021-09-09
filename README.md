@@ -1,3 +1,46 @@
+## JavaScript Task
+
+<img src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+     alt="Markdown Javascript icon"
+     height="50px"
+/>&nbsp;&nbsp;&nbsp;
+
+### Introduction
+
+This application contains funtions that returns user ID and
+playback time for specific parameters given.
+Also, it provides unit tests written in jest.
+
+### Requirements
+
+NodeJS installed on your system (12 or higher) -\*\* [NodeJS](https://nodejs.org)
+
+### Usage
+
+Navigate to javascript_task directory:
+
+```
+cd javascript_task
+```
+
+Install node_modules:
+
+```
+npm install
+```
+
+To execute app, run:
+
+```
+node app.js
+```
+
+To execute tests, run:
+
+```
+npm test
+```
+
 ## Python Task
 
 <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
@@ -10,6 +53,10 @@
 This application returns dictionary object that shows
 all allowed applications, the allowed features for a user.
 Also, it provides unit tests with report.html for given function.
+
+### Requirements
+
+Python3 installed (3.2 or higher) -\*\* [Python](https://www.python.org/)
 
 ### Usage
 
